@@ -22,7 +22,7 @@ for person in new_list[1:]:
 
 pattern = r"(8|\+7)[\s]?[\(]?(\d{3})?[\)]?[\s-]?(\d{3})?[\s-]?(\d{2})?[\s-]?(\d{2})?([\s])?[\(]?(\w{3}\.\s\d{4})?[\s)]?"
 pattern_repl = r"+7(\2)\3-\4-\5\6\7"
-list_2 = []
+
 for i in new_list:
     i[5] = re.sub(pattern, pattern_repl, i[5])
 
